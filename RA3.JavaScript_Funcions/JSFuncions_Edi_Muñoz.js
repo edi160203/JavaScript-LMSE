@@ -48,3 +48,11 @@ function sumarTres(a, b, c = 10) {
 console.log(sumarTres(2, 3));
 console.log(sumarTres(2, 3, 5));
 
+
+console.log("Ejercicio 7")
+function cridarExercicis() {
+    mostrarDataActual();
+    return sumarTres(2, 3);
+}
+
+console.log(cridarExercicis());
