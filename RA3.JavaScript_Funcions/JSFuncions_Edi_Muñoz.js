@@ -23,5 +23,20 @@ function mostrarDataActual() {
 
 mostrarDataActual();
 
+console.log("Ejercicio 5")
+function comptarVocals(text) {
+    let comptador = 0;
+    let vocals = "aeiouAEIOUàèéíòóúÀÈÉÍÒÓÚ";
 
+    for (let i = 0; i < text.length; i++) {
+        if (vocals.includes(text[i])) {
+            comptador++;
+        }
+    }
+
+    return comptador;
+}
+
+console.log(comptarVocals("Hola Mon"));
+console.log(comptarVocals("JavaScript"));
 
