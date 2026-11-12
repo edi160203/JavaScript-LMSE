@@ -56,3 +56,17 @@ function cridarExercicis() {
 }
 
 console.log(cridarExercicis());
+
+
+console.log("Ejercicio 8")
+function comprovarTrenta(a, b) {
+    if (a === 30 || b === 30 || (a + b) === 30) {
+        return true;
+    } else {
+        return false;
+    }
+}
+
+console.log(comprovarTrenta(30, 5));
+console.log(comprovarTrenta(10, 20));
+console.log(comprovarTrenta(10, 5));
