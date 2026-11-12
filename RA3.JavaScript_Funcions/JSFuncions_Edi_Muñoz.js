@@ -14,3 +14,11 @@ function mostrarTipus(valor) {
 mostrarTipus("Edi");
 mostrarTipus(25);
 mostrarTipus(true);
+
+console.log("Ejercicio 3")
+function mostrarDataActual() {
+    let data = new Date();
+    console.log(data);
+}
+
+mostrarDataActual();
