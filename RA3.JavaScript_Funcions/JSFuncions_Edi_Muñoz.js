@@ -70,3 +70,16 @@ function comprovarTrenta(a, b) {
 console.log(comprovarTrenta(30, 5));
 console.log(comprovarTrenta(10, 20));
 console.log(comprovarTrenta(10, 5));
+
+console.log("Ejercicio 9")
+let comprovarTrentaAnonima = function(a, b) {
+    if (a === 30 || b === 30 || (a + b) === 30) {
+        return true;
+    } else {
+        return false;
+    }
+};
+
+console.log(comprovarTrentaAnonima(30, 5));
+console.log(comprovarTrentaAnonima(10, 20));
+console.log(comprovarTrentaAnonima(10, 5));
