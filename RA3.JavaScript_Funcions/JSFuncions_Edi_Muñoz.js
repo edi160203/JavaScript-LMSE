@@ -40,3 +40,11 @@ function comptarVocals(text) {
 console.log(comptarVocals("Hola Mon"));
 console.log(comptarVocals("JavaScript"));
 
+console.log("Ejercicio 6")
+function sumarTres(a, b, c = 10) {
+    return a + b + c;
+}
+
+console.log(sumarTres(2, 3));
+console.log(sumarTres(2, 3, 5));
+
