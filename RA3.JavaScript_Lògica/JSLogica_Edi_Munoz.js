@@ -1,10 +1,14 @@
 console.log("\n Ejercicio 1\n");
 
 let num = 5;
-if (num % 3 === 0 || num % 7 === 0){
-    console.log("El numero " + num + " es multiplo de 3 0 de 7 ");
+if (num % 3 === 0 && num % 7 === 0){
+    console.log("El numero " + num + " es multiplo de 3 y de 7 ");
+} else if (num % 3 === 0) {
+    console.log("El numero " + num + " es multiplo de 3");
+} else if (num % 7 === 0) {
+    console.log("El numero " + num + " es multiplo de 7");
 } else {
-    console.log("El numero " + num + " no es multiplo de 3 o de 7 ");
+    console.log("El numero " + num + " no es multiplo de 3 ni de 7");
 }
 
 
@@ -40,3 +44,16 @@ if (nota >= 0 && nota <= 4.99){
 
 console.log("\n Ejercicio 4\n");
 
+let num4 = 70;
+
+switch (true){
+    case (num % 3 === 0 && num % 7 === 0):
+        console.log("El numero " + num4 + " Es multiplo de 3 y de 7 ");
+        break;
+    case (num4 % 3 === 0):
+        console.log("El numero " + num4 + " Es multiplo de 3");
+        break;
+    case (num4 % 7 === 0):
+        console.log("El numero " + num4 + " Es multiplo de 7");
+        break;
+}
