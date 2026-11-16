@@ -70,4 +70,16 @@ for (let i = 1; suma + i  <= num5; i++){
 }
 console.log("El numero maximo es " + num6);
 
+console.log("\nEjercicio 6\n");
+
+let x = 's56t7p';
+let suma1 = 0;
+
+for (let i = 0; i < x.length; i++){
+    if (!isNaN(x[i]) && x[i] !== ' ')
+    suma1 += Number(x[i]);
+}
+console.log("La suma de numeros es " + suma1);
+
+
 
