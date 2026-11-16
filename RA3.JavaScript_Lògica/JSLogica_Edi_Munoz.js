@@ -1,4 +1,4 @@
-console.log("\n Ejercicio 1\n");
+console.log("\nEjercicio 1\n");
 
 let num = 5;
 if (num % 3 === 0 && num % 7 === 0){
@@ -12,7 +12,7 @@ if (num % 3 === 0 && num % 7 === 0){
 }
 
 
-console.log("\n Ejercicio 2\n");
+console.log("\nEjercicio 2\n");
 
 let num2 = 5;
 let num3 = 40;
@@ -24,7 +24,7 @@ num3 >= 10 && num3 <= 50 ? console.log(num3 + " Esta en el rango de 10 a 50")
 : console.log(num3 + " no esta en el rango de 10 a 50")
 
 
-console.log("\n Ejercicio 3\n");
+console.log("\nEjercicio 3\n");
 
 let nota = -5;
 
@@ -42,7 +42,7 @@ if (nota >= 0 && nota <= 4.99){
     console.log("Nota no valida ");
 }
 
-console.log("\n Ejercicio 4\n");
+console.log("\nEjercicio 4\n");
 
 let num4 = 70;
 
@@ -57,3 +57,17 @@ switch (true){
         console.log("El numero " + num4 + " Es multiplo de 7");
         break;
 }
+
+console.log("\nEjercicio 5\n");
+
+let num5 = 15;
+let num6 = 0;
+let suma = 0;
+
+for (let i = 1; suma + i  <= num5; i++){
+    suma += i;
+    num6 = i;
+}
+console.log("El numero maximo es " + num6);
+
+
