@@ -82,4 +82,25 @@ for (let i = 0; i < x.length; i++){
 console.log("La suma de numeros es " + suma1);
 
 
+console.log("\nEjercicio 7\n");
+
+let num7 = 15;
+let num8 = 25;
+let num9 = 18;
+
+if (num7 >= num8 && num8 >= num9){
+    console.log(num7 + ", " + num8 + ", " + num9);
+}else if (num7 >= num9 && num9 >= num8){
+    console.log(num7 + ", " + num9 + ", " + num8);
+}else if (num8 >= num7 && num7 >= num9){
+    console.log(num8 + ", " + num7 + ", " + num9);
+}else if (num8 >= num9 && num9 >= num7){
+    console.log(num8 + "," + num9 + ", " +num7);
+}else if (num9 >= num8 && num8 >= num7){
+    console.log(num9 + ", " + num8 + ", " + num7);
+}else {
+    console.log(num9 + ", " + num7 + ", " + num8);
+}
+
+
 
