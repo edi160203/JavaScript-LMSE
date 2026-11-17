@@ -119,3 +119,16 @@ for (let i = 0; i <= num10; i++){
 console.log("Los numeros pares de " + num10 + " son " + pares);
 console.log("Los numeros impares de " + num10 + " son " + impares);
 
+console.log("\nEjercicio 9\n");
+
+function dibujarPatron(){
+
+    for (let i = 1; i <= 5; i++){
+        let fila = "";
+        for (let j = 1; j <= i; j++){
+            fila += "* ";
+        }
+        console.log(fila);
+    }
+}
+dibujarPatron();
