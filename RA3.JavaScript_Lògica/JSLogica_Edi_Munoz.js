@@ -103,4 +103,19 @@ if (num7 >= num8 && num8 >= num9){
 }
 
 
+console.log("\nEjercicio 8\n");
+
+let num10 = 10;
+let pares = "";
+let impares = "";
+
+for (let i = 0; i <= num10; i++){
+    if (i % 2 === 0){
+        pares += i + " ";
+    }else {
+        impares += i + " ";
+    }
+}
+console.log("Los numeros pares de " + num10 + " son " + pares);
+console.log("Los numeros impares de " + num10 + " son " + impares);
 
