@@ -146,3 +146,21 @@ do {
 } while (contador <= 1000);
 
 console.log("La suma de los multiplos de 3 y 5 hasta 1000 es: " + suma2);
+
+
+console.log("\nEjercicio 11\n");
+
+function dibujarPatronImpares(){
+
+    for (let i = 1; i <= 5; i++){
+        if (i % 2 === 0){
+            continue
+        }
+        let fila1 = "";
+        for (let j = 1; j <= i; j++){
+            fila1 += "* ";
+        }
+        console.log(fila1);
+    }
+}
+dibujarPatronImpares();
