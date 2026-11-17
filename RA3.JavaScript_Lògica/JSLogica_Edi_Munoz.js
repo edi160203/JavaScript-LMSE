@@ -132,3 +132,17 @@ function dibujarPatron(){
     }
 }
 dibujarPatron();
+
+console.log("\nEjercicio 10\n");
+
+let contador = 1;
+let suma2 = 0;
+
+do {
+    if (contador % 3 === 0 || contador % 5 === 0){
+        suma2 += contador;
+    }
+    contador++;
+} while (contador <= 1000);
+
+console.log("La suma de los multiplos de 3 y 5 hasta 1000 es: " + suma2);
