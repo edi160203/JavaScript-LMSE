@@ -164,3 +164,19 @@ function dibujarPatronImpares(){
     }
 }
 dibujarPatronImpares();
+
+console.log("\nEjercicio 12\n");
+
+let num12 = 123456;
+let str12 = num12.toString();
+let resultado12 = "";
+
+if (str12.length % 2 === 0) {
+    for (let i = 0; i < str12.length; i += 2) {
+        resultado12 += str12[i + 1] + str12[i];
+    }
+    console.log("El número invertido por parejas es: " + Number(resultado12));
+} else {
+    console.log("El número debe tener una longitud par.");
+}
+
