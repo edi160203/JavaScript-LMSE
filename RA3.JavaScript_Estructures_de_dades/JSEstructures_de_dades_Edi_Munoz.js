@@ -19,3 +19,24 @@ console.log("\nEjercicio 2\n");
 let numerosCopia = [...numeros];
 console.log("Nuevo array ", numerosCopia);
 
+console.log("\nEjercicio 3\n");
+
+let array1 = [1, 2, 3, 4];
+let array2 = [3, 4, 5, 6];
+
+let fusionarrays = [...array1, ...array2];
+
+let sinDuplicados = [];
+
+for (let i = 0; i < fusionarrays.length; i++){
+    if (!sinDuplicados.includes(fusionarrays[i])){
+        sinDuplicados.push(fusionarrays[i]);
+    }
+}
+console.log("Sin duplicados:", sinDuplicados);
+
+
+
+
+
+
