@@ -132,24 +132,25 @@ if (paraula === invertida) {
 console.log("\nEjercicio 9\n");
 
 class Pelicula {
-    constructor(titol, descripcio, anyEstrena) {
+    constructor(titol, descripcio, anyEstrena, actors) {
         this.titol = titol;
         this.descripcio = descripcio;
         this.anyEstrena = anyEstrena;
+        this.actors = actors;
     }
 }
 
-let peliculaClasse = new Pelicula("Inception", "Un ladron que roba secretos mediante los suenos", 2010);
+let peliculaClasse = new Pelicula("Inception", "Un ladron que roba secretos mediante los suenos", 2010, ["Leonardo DiCaprio", "Joseph Gordon-Levitt", "Elliot Page"]);
 
 let peliculaLiteral = {
     titol: "Interstellar",
     descripcio: "Un grupo de exploradores viaja a traves de un agujero de gusano en el espacio",
-    anyEstrena: 2014
+    anyEstrena: 2014,
+    actors: ["Matthew McConaughey", "Anne Hathaway", "Jessica Chastain"]
 };
 
-console.log("Pelicula con class + new:", peliculaClasse.titol, "-", peliculaClasse.descripcio, "-", peliculaClasse.anyEstrena);
-console.log("Pelicula literal:", peliculaLiteral.titol, "-", peliculaLiteral.descripcio, "-", peliculaLiteral.anyEstrena);
-
+console.log("Pelicula con class + new:", peliculaClasse.titol, "-", peliculaClasse.descripcio, "-", peliculaClasse.anyEstrena, "-", peliculaClasse.actors);
+console.log("Pelicula literal:", peliculaLiteral.titol, "-", peliculaLiteral.descripcio, "-", peliculaLiteral.anyEstrena, "-", peliculaLiteral.actors);
 
 //*//*10.- Crea una Cua d’Objectes amb dades de les 2 pel·lícules. Itera la cua per mostrar per pantalla la pel·lícula més antiga.
 
@@ -169,3 +170,17 @@ while (cuaPelicules.length > 0) {
 }
 
 console.log("La pelicula mas antigua es: " + mesAntiga.titol + " (" + mesAntiga.anyEstrena + ")");
+
+
+//*//*11.- Modifica l’exercici anterior per afegir un array d’actors a cada pel·lícula i que es mostrin tots els actors de totes les pel·lícules.
+
+console.log("\nEjercicio 11\n");
+
+let pelicules = [peliculaClasse, peliculaLiteral];
+
+for (let i = 0; i < pelicules.length; i++) {
+    console.log("Actors de " + pelicules[i].titol + ":");
+    for (let j = 0; j < pelicules[i].actors.length; j++) {
+        console.log("- " + pelicules[i].actors[j]);
+    }
+}
