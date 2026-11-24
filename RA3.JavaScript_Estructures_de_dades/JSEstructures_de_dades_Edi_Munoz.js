@@ -88,7 +88,15 @@ for (let i = 0; i < arrayString.length; i++){
 }
 console.log("La palabra que contiene mas letra a es "  + acomulativa);
 
+console.log("\nEjercicio 7\n");
 
+let mapa = new Map();
+mapa.set("nombre", "Edi");
+mapa.set(1, "Uno");
+mapa.set(true, "Activo");
+
+console.log(mapa);
+console.log("Si que deja insertar claves de distintos tipos en un Map:", mapa.get("nombre"), mapa.get(1), mapa.get(true));
 
 
 
