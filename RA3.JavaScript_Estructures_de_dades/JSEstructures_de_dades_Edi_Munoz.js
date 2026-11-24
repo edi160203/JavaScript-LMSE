@@ -150,3 +150,22 @@ let peliculaLiteral = {
 console.log("Pelicula con class + new:", peliculaClasse.titol, "-", peliculaClasse.descripcio, "-", peliculaClasse.anyEstrena);
 console.log("Pelicula literal:", peliculaLiteral.titol, "-", peliculaLiteral.descripcio, "-", peliculaLiteral.anyEstrena);
 
+
+//*//*10.- Crea una Cua d’Objectes amb dades de les 2 pel·lícules. Itera la cua per mostrar per pantalla la pel·lícula més antiga.
+
+console.log("\nEjercicio 10\n");
+
+let cuaPelicules = [];
+cuaPelicules.push(peliculaClasse);
+cuaPelicules.push(peliculaLiteral);
+
+let mesAntiga = null;
+
+while (cuaPelicules.length > 0) {
+    let actual = cuaPelicules.shift();
+    if (mesAntiga === null || actual.anyEstrena < mesAntiga.anyEstrena) {
+        mesAntiga = actual;
+    }
+}
+
+console.log("La pelicula mas antigua es: " + mesAntiga.titol + " (" + mesAntiga.anyEstrena + ")");
