@@ -127,4 +127,26 @@ if (paraula === invertida) {
 }
 
 
+//*//*9.- Crea un objecte Pel·lícula que contingui informació del títol, descripció i any d’estrena. Fes-ne dos exemples: un amb class + new i l’altre amb declaració literal (JSON). Mostra les dades dels dos objectes.
+
+console.log("\nEjercicio 9\n");
+
+class Pelicula {
+    constructor(titol, descripcio, anyEstrena) {
+        this.titol = titol;
+        this.descripcio = descripcio;
+        this.anyEstrena = anyEstrena;
+    }
+}
+
+let peliculaClasse = new Pelicula("Inception", "Un ladron que roba secretos mediante los suenos", 2010);
+
+let peliculaLiteral = {
+    titol: "Interstellar",
+    descripcio: "Un grupo de exploradores viaja a traves de un agujero de gusano en el espacio",
+    anyEstrena: 2014
+};
+
+console.log("Pelicula con class + new:", peliculaClasse.titol, "-", peliculaClasse.descripcio, "-", peliculaClasse.anyEstrena);
+console.log("Pelicula literal:", peliculaLiteral.titol, "-", peliculaLiteral.descripcio, "-", peliculaLiteral.anyEstrena);
 
