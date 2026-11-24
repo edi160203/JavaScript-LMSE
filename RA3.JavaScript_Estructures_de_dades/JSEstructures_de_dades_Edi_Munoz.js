@@ -88,6 +88,9 @@ for (let i = 0; i < arrayString.length; i++){
 }
 console.log("La palabra que contiene mas letra a es "  + acomulativa);
 
+
+//*//*7.- Crea una estructura Map i insereix 3 claus – valor. Les 3 claus han de ser de tipus de dades diferents. Et deixa?
+
 console.log("\nEjercicio 7\n");
 
 let mapa = new Map();
@@ -99,6 +102,29 @@ console.log(mapa);
 console.log("Si que deja insertar claves de distintos tipos en un Map:", mapa.get("nombre"), mapa.get(1), mapa.get(true));
 
 
+//*//*8.- Donada una paraula, insereix cada caràcter dins d’una cua. Extreu ara de la cua els caràcters un a un per poder decidir si és un palíndrom o no.
+
+console.log("\nEjercicio 8\n");
+
+let paraula = "reconocer";
+let cua = [];
+
+for (let i = 0; i < paraula.length; i++) {
+    cua.push(paraula[i]);
+}
+
+let invertida = "";
+
+while (cua.length > 0) {
+    let caracter = cua.shift();
+    invertida = caracter + invertida;
+}
+
+if (paraula === invertida) {
+    console.log("La palabra " + paraula + " es un palindromo");
+} else {
+    console.log("La palabra " + paraula + " no es un palindromo");
+}
 
 
 
